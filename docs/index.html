@@ -8,6 +8,41 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+
+      <style>
+        /* CSS for side-by-side layout using Flexbox */
+        .image-gallery {
+            display: flex; /* Makes the container a flex container */
+            flex-wrap: wrap; /* Allows items to wrap to the next line if space runs out */
+            justify-content: center; /* Centers items horizontally */
+            gap: 20px; /* Creates space between items */
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        .image-item {
+            /* flex: 1; */ /* Optional: makes items grow to fill available space */
+            min-width: 200px; /* Minimum width before wrapping */
+            max-width: 300px; /* Maximum width for each item */
+            text-align: center;
+            border: 1px solid #eee;
+            padding: 10px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .image-item img {
+            max-width: 100%; /* Make images responsive within their item container */
+            height: auto;
+            display: block; /* Remove extra space below image */
+            margin: 0 auto; /* Center image horizontally within its item */
+        }
+
+        .image-item p {
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: #555;
+        }
+    </style>
 </head>
 
 <body>
@@ -35,8 +70,8 @@
       <p>Modern passenger vehicles increasingly rely on video cameras within advanced driver assistance systems (ADAS) and automated driving (AD) technologies to perceive their surroundings and make decisions. These perception systems, largely based on machine learning, face typical challenges of data-driven approaches. As their role in safety-critical scenarios grows, uncertainty quantification has gained significant attention to better characterize both the perceived environment and the confidence in these perceptions. Benchmarking these methods from a application point of view becomes crucial for their deployment. In this context, robust metrics are critical to evaluate how well an intelligent vehicle’s perception system performs. This paper investigates the relationship between conventional computer vision metrics and those required for ADAS/AD applications, when characterizing perception system from an application point of view. It presents experimental results that reveal alignments and mismatches between standard computer vision measures and the demands of ADAS/AD use cases.  Finally, it demonstrates how adopting a unified perspective on metrics can: (1) provide deeper insights into perception system performance, and (2) guide the selection of appropriate evaluation criteria to enhance the deployment of machine learning algorithms in intelligent vehicle perception.</p>
     </div>
   </section>
-<section>
-        
+<section>        
+  
         <div class="image-item">
             <img src="images/image1.png"
                  alt="A purple placeholder image with text 'Purple View'">
@@ -50,13 +85,13 @@
         </div>
 
         <div class="image-item">
-            <img src="images/image2.png"
+            <img src="images/image3.png"
                  alt="An Indian Red placeholder image with text 'Indian Red Sky'">
             <p>Fog</p>
         </div>
 
         <div class="image-item">
-            <img src="images/image2.png"
+            <img src="images/image4.png"
                  alt="A steel blue placeholder image with text 'Steel Blue City'">
             <p>Rain</p>
         </div>
